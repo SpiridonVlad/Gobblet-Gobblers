@@ -1,0 +1,10 @@
+^C:\FACULTATE\GITHUB\GOBBLET-GOBBLERS\COPILOT\BUILD\CMAKEFILES\2119A392B18FD41129DCF8CA7D44A8B4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Facultate/GitHub/Gobblet-Gobblers/Copilot -BC:/Facultate/GitHub/Gobblet-Gobblers/Copilot/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Facultate/GitHub/Gobblet-Gobblers/Copilot/build/GobbletGobblers.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

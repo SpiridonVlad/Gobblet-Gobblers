@@ -1,0 +1,3 @@
+C:/Facultate/GitHub/Gobblet-Gobblers/Copilot/build/CMakeFiles/GobbletGobblers.dir
+C:/Facultate/GitHub/Gobblet-Gobblers/Copilot/build/CMakeFiles/ALL_BUILD.dir
+C:/Facultate/GitHub/Gobblet-Gobblers/Copilot/build/CMakeFiles/ZERO_CHECK.dir

@@ -14822,7 +14822,7 @@ void paginaRegulament()
 {
 
     cleardevice();
-    if(iarna == 0)
+    if (iarna == 0)
     {
         setfillstyle(SOLID_FILL, COLOR(0, 210, 255));
         bar(0, 0, width, height);
@@ -14831,18 +14831,18 @@ void paginaRegulament()
     }
     else
     {
-        if(width == 1920) readimagefile("iarna_1920.gif", 0, 0, width, height);
+        if (width == 1920) readimagefile("iarna_1920.gif", 0, 0, width, height);
         else readimagefile("iarna_1280.gif", 0, 0, width, height);
-        setbkcolor(COLOR(191,221,229));
-        setcolor(COLOR(101,149,153));
+        setbkcolor(COLOR(191, 221, 229));
+        setcolor(COLOR(101, 149, 153));
     }
-    if(width == 1280)
+    if (width == 1280)
     {
-        if(lmb)
+        if (lmb)
         {
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 3);
             settextjustify(CENTER_TEXT, CENTER_TEXT);
-            outtextxy(width/2, height/(height/10)*10, "REGULAMENT");
+            outtextxy(width / 2, height / (height / 10) * 10, "REGULAMENT");
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 2);
             settextjustify(LEFT_TEXT, CENTER_TEXT);
             outtextxy(10, 200, "1.La inceputul jocului, fiecare jucator are cate 2 piese mici,");
@@ -14858,13 +14858,13 @@ void paginaRegulament()
 
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 3);
             settextjustify(CENTER_TEXT, CENTER_TEXT);
-            outtextxy(width/2, 670, "!DISTRACTIE PLACUTA!");
+            outtextxy(width / 2, 670, "!DISTRACTIE PLACUTA!");
         }
         else
         {
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 3);
             settextjustify(CENTER_TEXT, CENTER_TEXT);
-            outtextxy(width/2, height/(height/10)*10, "RULES");
+            outtextxy(width / 2, height / (height / 10) * 10, "RULES");
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 2);
             settextjustify(LEFT_TEXT, CENTER_TEXT);
             outtextxy(10, 200, "1.At the beggining of the game, each player has 2 small pieces,");
@@ -14879,19 +14879,19 @@ void paginaRegulament()
             outtextxy(10, 560, "5.Once a player has selected a piece, he has to use it.");
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 3);
             settextjustify(CENTER_TEXT, CENTER_TEXT);
-            outtextxy(width/2, 670, "!HAVE FUN!");
+            outtextxy(width / 2, 670, "!HAVE FUN!");
 
 
         }
     }
-    else if(width == 1920)
+    else if (width == 1920)
     {
-        if(lmb)
+        if (lmb)
         {
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 4);
             settextjustify(CENTER_TEXT, CENTER_TEXT);
 
-            outtextxy(width/2, height/(height/10)*10, "REGULAMENT");
+            outtextxy(width / 2, height / (height / 10) * 10, "REGULAMENT");
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 3);
             settextjustify(LEFT_TEXT, CENTER_TEXT);
 
@@ -14909,7 +14909,7 @@ void paginaRegulament()
 
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 4);
             settextjustify(CENTER_TEXT, CENTER_TEXT);
-            outtextxy(width/2, 980, "!DISTRACTIE PLACUTA!");
+            outtextxy(width / 2, 980, "!DISTRACTIE PLACUTA!");
 
         }
         else
@@ -14917,7 +14917,7 @@ void paginaRegulament()
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 4);
             settextjustify(CENTER_TEXT, CENTER_TEXT);
 
-            outtextxy(width/2, height/(height/10)*10, "RULES");
+            outtextxy(width / 2, height / (height / 10) * 10, "RULES");
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 3);
             settextjustify(LEFT_TEXT, CENTER_TEXT);
 
@@ -14933,7 +14933,7 @@ void paginaRegulament()
             outtextxy(10, 760, "5.Once a player has selected a piece, he has to use it.");
             settextstyle(DEFAULT_FONT, HORIZ_DIR, 4);
             settextjustify(CENTER_TEXT, CENTER_TEXT);
-            outtextxy(width/2, 980, "!HAVE FUN!");
+            outtextxy(width / 2, 980, "!HAVE FUN!");
 
         }
     }
@@ -14941,12 +14941,12 @@ void paginaRegulament()
     inapoi1();
 }
 
-void rezolutie(int &width, int &height)
+void rezolutie(int& width, int& height)
 {
 
     cleardevice();
 
-    if(iarna == 0)
+    if (iarna == 0)
     {
         setfillstyle(SOLID_FILL, COLOR(0, 210, 255));
         bar(0, 0, width, height);
@@ -14955,46 +14955,46 @@ void rezolutie(int &width, int &height)
     }
     else
     {
-        if(width == 1920) readimagefile("iarna_1920.gif", 0, 0, width, height);
+        if (width == 1920) readimagefile("iarna_1920.gif", 0, 0, width, height);
         else readimagefile("iarna_1280.gif", 0, 0, width, height);
-        setbkcolor(COLOR(191,221,229));
-        setcolor(COLOR(101,149,153));
+        setbkcolor(COLOR(191, 221, 229));
+        setcolor(COLOR(101, 149, 153));
     }
 
     settextjustify(CENTER_TEXT, CENTER_TEXT);
-    if(width == 1920)
+    if (width == 1920)
         settextstyle(DEFAULT_FONT, HORIZ_DIR, 4);
-    else if(width == 1280)
+    else if (width == 1280)
         settextstyle(DEFAULT_FONT, HORIZ_DIR, 3);
 
-    B[8].D.SS.x = width/4 - textwidth("1920x1080")/2;
-    B[8].D.DJ.x = width/4 + textwidth("1920x1080")/2;
-    B[8].D.SS.y = height/2 - textheight("1920x1080")/2;
-    B[8].D.DJ.y = height/2 + textheight("1920x1080")/2 - 7;
+    B[8].D.SS.x = width / 4 - textwidth("1920x1080") / 2;
+    B[8].D.DJ.x = width / 4 + textwidth("1920x1080") / 2;
+    B[8].D.SS.y = height / 2 - textheight("1920x1080") / 2;
+    B[8].D.DJ.y = height / 2 + textheight("1920x1080") / 2 - 7;
     strcpy(B[8].text, "1920x1080");
     bar(B[8].D.SS.x, B[8].D.SS.y, B[8].D.DJ.x, B[8].D.DJ.y);
-    if(width == 1920)
+    if (width == 1920)
     {
-        if(iarna) setcolor(COLOR(101,149,153));
+        if (iarna) setcolor(COLOR(101, 149, 153));
         else setcolor(DARKGRAY);
     }
     else setcolor(COLOR(255, 83, 10));
-    outtextxy(width/4, height/2, B[8].text);
+    outtextxy(width / 4, height / 2, B[8].text);
 
 
-    B[9].D.SS.x = width/4 + width/4 + width/4 - textwidth("1280x720")/2;
-    B[9].D.DJ.x = width/4 + width/4 + width/4 + textwidth("1280x720")/2;
-    B[9].D.SS.y = height/2 - textheight("1280x720")/2;
-    B[9].D.DJ.y = height/2 + textheight("1280x720")/2 - 7;
+    B[9].D.SS.x = width / 4 + width / 4 + width / 4 - textwidth("1280x720") / 2;
+    B[9].D.DJ.x = width / 4 + width / 4 + width / 4 + textwidth("1280x720") / 2;
+    B[9].D.SS.y = height / 2 - textheight("1280x720") / 2;
+    B[9].D.DJ.y = height / 2 + textheight("1280x720") / 2 - 7;
     strcpy(B[9].text, "1280x720");
     bar(B[9].D.SS.x, B[9].D.SS.y, B[9].D.DJ.x, B[9].D.DJ.y);
-    if(width == 1280)
+    if (width == 1280)
     {
-        if(iarna) setcolor(COLOR(101,149,153));
+        if (iarna) setcolor(COLOR(101, 149, 153));
         else setcolor(DARKGRAY);
     }
     else setcolor(COLOR(255, 83, 10));
-    outtextxy(width/4 + width/4 + width/4, height/2, B[9].text);
+    outtextxy(width / 4 + width / 4 + width / 4, height / 2, B[9].text);
 
 
     iesire1();

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Facultate\GitHub\Gobblet-Gobblers\Copilot\src\Board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Facultate\GitHub\Gobblet-Gobblers\Copilot\src\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Facultate\GitHub\Gobblet-Gobblers\Copilot\src\Piece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Facultate\GitHub\Gobblet-Gobblers\Copilot\src\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Facultate\GitHub\Gobblet-Gobblers\Copilot\src\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Facultate\GitHub\Gobblet-Gobblers\Copilot\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Facultate\GitHub\Gobblet-Gobblers\Copilot\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B8045E83-75B1-3671-B428-6B6F5E402426}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
